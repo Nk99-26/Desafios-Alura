@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <img class="logo" src="img/Logo.png" alt="Logo Alura">
+    <main id="main">
+        <div class="menu">
+            <div class="texto">
+                <div id="div-ecribible" placeholder="Ingrese texto aqui.." contenteditable="true" onkeypress="return soloLetras(event);"></div>
+                <!-- <input onkeypress="return soloLetras(event);" placeholder="Ingrese el texto aqui"> -->
+                <input type="hidden">
+            </div>
+           
+            <div class="msj">
+                <img class="exclamation" src="img/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
+                <h4 class="acentos">Solo letras minúsculas y sin acentos</h4>
+            </div>
+            <div class="btn-group">
+                <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+            
+       
+        <div class="container" >
+            <div id="msj-encontrado">
+                <p id="msj-encriptado"></p>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+            
+            <diV class="container-avisos" id="ocultar">
+                <img class="muñeco" src="img/Muñeco.png" alt="Muñeco">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+        
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
