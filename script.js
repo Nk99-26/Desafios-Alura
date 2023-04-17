@@ -70,7 +70,7 @@ function desencriptar() {
 function soloLetras(e) {
     key = e.keyCode || e.which;
     tecla = String.fromCharCode(key).toString();
-    letras = "abcdefghijklmnñopqrstuvwxyz ";//Se define todo el abecedario que se quiere que se muestre.
+    letras = "abcdefghijklmnñopqrstuvwxyz 1234567890";//Se define todo el abecedario que se quiere que se muestre.
     especiales = [8,37, 39, 46, 6]; //Es la validación del KeyCodes, que teclas recibe el campo de texto.
 
     tecla_especial = false

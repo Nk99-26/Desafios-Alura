@@ -8,25 +8,40 @@
     --main-bg-color:#F3F5FC;
     --text-color:#0A3871;
 }
+
 [contentEditable=true]:empty:not(:focus):before{
     content:attr(placeholder)
 }
 
-#main{
+footer{
+    border-top: 1px dotted #495057; 
+    color: #495057;
+    padding: 1em;
+}
+
+ul{
+    list-style: none;
+    margin: 0 auto;
+}
+.logogithub{
+    width: 2em;
+}
+
+#main,footer{
     margin: 2em 2em;
     min-width: 250px;
 }
+
 .muñeco{
     display: none;
    }
 
 body{
     background-color: var(--main-bg-color);
-
 } 
+
 .logo{
     margin: 1.5em -2em;
-    display: inline-block;
 }
 .texto{
     font-family: 'Inter';
@@ -143,13 +158,25 @@ p{
         min-height: 40em;
         margin: 1em auto;
         gap: 4em;
+      
+    }
+    footer{
+        display: flex;
+        max-width: 80em;
+        margin: 1em auto;
+    }
+    .logo{
+        margin: 1.5em -4em;
+    }
+    header{
         
+        max-width: 90em;
+        margin: 1em auto;
     }
     .container{
         flex:1;
         justify-content: center;
         margin: 0 1em;
-    
     }
     .texto{
         height: 15em; 
