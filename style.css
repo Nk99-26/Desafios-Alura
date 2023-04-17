@@ -1,12 +1,10 @@
 *{font-family: 'Inter';  }
 
-/* body{
-    max-width: 1600px;
-    margin: 0 auto;
-} */
+
 :root{
     --main-bg-color:#F3F5FC;
     --text-color:#0A3871;
+    --text-secondary-color:#495057;
 }
 
 [contentEditable=true]:empty:not(:focus):before{
@@ -14,8 +12,8 @@
 }
 
 footer{
-    border-top: 1px dotted #495057; 
-    color: #495057;
+    border-top: 1px dotted var(--text-secondary-color); 
+    color: var(--text-secondary-color);
     padding: 1em;
 }
 
@@ -37,7 +35,7 @@ ul{
    }
 
 body{
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color); 
 } 
 
 .logo{
@@ -49,7 +47,6 @@ body{
     font-size: 32px;
     line-height: 150%;
     display: inline-block;
-   
 }
 
 #div-ecribible{
@@ -63,8 +60,8 @@ body{
 
 #div-ecribible::placeholder{
     color: #0A3871;
-    
 }
+
 #div-ecribible:focus{
     border: 2px solid #757FB2;
     border-radius: 5px;
@@ -79,7 +76,7 @@ body{
 }
 
 .acentos{
-    color: #495057;
+    color: var(--text-secondary-color);
 }
 
 .btn-group{
@@ -128,13 +125,18 @@ h3{
     font-size: 24px;
 }
 p{
-    color: #495057;
+    color: var(--text-secondary-color);
     
 }
 .texto{
     width: 100%;
     height: 10em;
     padding-right: 1em;
+}
+footer{
+    display: flex;
+    max-width: 80em;
+    margin: 1em auto;
 }
 
 
@@ -152,24 +154,19 @@ p{
     .muñeco{
         display:inline-flex;
     }
+   
     #main{
         display: flex;
         max-width: 80em;
         min-height: 40em;
         margin: 1em auto;
         gap: 4em;
-      
     }
-    footer{
-        display: flex;
-        max-width: 80em;
-        margin: 1em auto;
-    }
+
     .logo{
         margin: 1.5em -4em;
     }
     header{
-        
         max-width: 90em;
         margin: 1em auto;
     }
